@@ -47,7 +47,7 @@ function task3()
           prev: `${getWeekDayPrev(a)}`,
         }];
     console.log (week);
-    alert (`next - ${getWeekDayNext(a)}, curr - ${getWeekDayCurr(a)}, prev - ${getWeekDayPrev(a)}`);
+    alert (`next - getWeekDayNext(a), curr - getWeekDayCurr(a), prev - getWeekDayPrev(a)`);
 }
 
 
