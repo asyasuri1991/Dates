@@ -24,7 +24,6 @@ function task3()
     let a = new Date(prompt("Введите дату: год-месяц-число"));
     function getWeekDayNext(a) {
         a.setDate(a.getDate()+1);
-        console.log(a)
         let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
         return days[a.getDay()];
         }
@@ -36,7 +35,6 @@ function task3()
         }  
     function getWeekDayPrev(a) {
         a.setDate(a.getDate()-1);
-        console.log(a)
         let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
         return days[a.getDay()];
         }    
