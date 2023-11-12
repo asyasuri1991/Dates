@@ -47,7 +47,7 @@ function task3()
           prev: `${getWeekDayPrev(a)}`,
         }];
     console.log (week);
-    alert ("Ответ указала в console.log");
+    alert (week);
 }
 
 
