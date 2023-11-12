@@ -21,23 +21,23 @@ function task2()
 
 function task3()
 {
-    let a = new Date(prompt("Введите дату (год-месяц-число)"));
+    let a = new Date(prompt("Введите дату: год-месяц-число"));
     function getWeekDayNext(a) {
         a.setDate(a.getDate()+1);
         console.log(a)
-        let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
         return days[a.getDay()];
         }
     function getWeekDayCurr(a) {
         a.setDate(a.getDate()-1);
         console.log(a)
-        let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
         return days[a.getDay()];
         }  
     function getWeekDayPrev(a) {
         a.setDate(a.getDate()-1);
         console.log(a)
-        let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
         return days[a.getDay()];
         }    
     let week = [
@@ -47,7 +47,9 @@ function task3()
           prev: `${getWeekDayPrev(a)}`,
         }];
     console.log (week);
+    alert ("Ответ указала в console.log");
 }
+
 
 
 function task4()
