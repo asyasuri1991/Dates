@@ -15,13 +15,13 @@ function task2()
     nextDate = new Date("January 1, 2024")
     msPerDay = 24*60*60*1000;
     daysLeft = Math.round((nextDate.getTime() - today.getTime())/msPerDay);
-    alert(`До Нового года осталось ${daysLeft} дней`);
+    alert(`До Нового года осталось ${daysLeft} дн.`);
 }
 
 
 function task3()
 {
-    let a = new Date(prompt("Введите дату в формате год-месяц-число"));
+    let a = new Date(prompt("Введите дату (год-месяц-число)"));
     function getWeekDayNext(a) {
         a.setDate(a.getDate()+1);
         console.log(a)
@@ -87,9 +87,9 @@ function task4()
 function task5()
 {
     let today = new Date();
-    let hbdate = new Date(prompt("Введите свою дату рождения"));
+    let hbdate = new Date(prompt("Введите дату рождения (год-месяц-число)"));
     let diff = new Date(today.getTime() - hbdate.getTime());
-    alert(`Ваш возраст: ${diff.getUTCFullYear() - 1970} лет, ${diff.getUTCMonth()} мес. и ${diff.getUTCDate() - 2} дн.`);
+    alert(`Ваш возраст - ${diff.getUTCFullYear() - 1970} лет, ${diff.getUTCMonth()} мес и ${diff.getUTCDate() - 2} дн`);
 }
 
 
@@ -114,16 +114,14 @@ function task7()
 {
     let timeNow = new Date();
     let hours = timeNow.getHours();
-    let greet;
-
-
-    if (hours >= 0 && hours <= 11.59)
-        greet = 'Доброе утро!';
-    else if (hours >= 12 && hours <= 17)
-        greet = 'Добрый день!';
-    else if (hours >= 17 && hours <= 24)
-        greet = 'Добрый вечер!';
-    alert (greet);
+    let hello;
+    if (hours >= 0 && hours <= 11.00)
+        hello = 'Доброе утро!';
+    else if (hours >= 11.01 && hours <= 17)
+        hello = 'Добрый день!';
+    else if (hours >= 17.01 && hours <= 24)
+        hello = 'Добрый вечер!';
+    alert (hello);
 }
 
 
@@ -147,8 +145,7 @@ function task8()
         { 'День России': `${days[RussiaDay.getDay()]}`},
         { 'День народного единства': `${days[UnityDay.getDay()]}`},
         { 'Новый год': `${days[NewYear.getDay()]}`},
-      ];
-     
+      ]; 
       console.log(holiday);
 }
 
